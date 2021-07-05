@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
+import TextInput from './components/UIKit/TextInput';
+import SignIn from './components/Auth/SignIn';
 import './App.css';
 
 function App() {
@@ -49,6 +51,22 @@ function App() {
           >
             React Redux
           </a>
+        </span>
+        <span>
+          <TextInput 
+            id={'test'}
+            type={'text'}
+            label={'TextInput'}
+          />
+
+          <TextInput 
+            id={'pass'}
+            type={'password'}
+            label={'password'}
+          />
+        </span>
+        <span>
+          <SignIn />
         </span>
       </header>
     </div>
